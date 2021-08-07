@@ -97,7 +97,7 @@
             android:background="@drawable/btn_blue_search_background"
             android:gravity="center"
             android:text="@string/search_blue_equipment"
-            android:textColor="@color/btn_text"
+            android:textColor="@color/color_FFD155"
             android:textSize="@dimen/sp_15" />
 
     </LinearLayout>
