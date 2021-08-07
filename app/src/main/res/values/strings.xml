@@ -36,10 +36,10 @@
 
 
     <!-- tab -->
-    <string name="kuaijie">SHORTCUT</string>
-    <string name="weitiao">MICRO ADJ</string>
-    <string name="anmo">MASSAGE</string>
-    <string name="dengguang">LIGHT</string>
+    <string name="kuaijie">快捷</string>
+    <string name="weitiao">微調</string>
+    <string name="anmo">按摩</string>
+    <string name="dengguang">燈光</string>
 
     <!-- 快捷 -->
     <string name="jiyi">Memory</string>

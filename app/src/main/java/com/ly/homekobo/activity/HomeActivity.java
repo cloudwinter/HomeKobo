@@ -12,11 +12,9 @@ import android.os.IBinder;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 
 import com.ly.homekobo.R;
 import com.ly.homekobo.adapter.TabPagerAdapter;
@@ -28,20 +26,9 @@ import com.ly.homekobo.fragment.AnmoFragment;
 import com.ly.homekobo.fragment.DengguangFragment;
 import com.ly.homekobo.fragment.KuaijieK1Fragment;
 import com.ly.homekobo.fragment.KuaijieK2Fragment;
-import com.ly.homekobo.fragment.KuaijieK3Fragment;
-import com.ly.homekobo.fragment.KuaijieK4Fragment;
-import com.ly.homekobo.fragment.KuaijieK5Fragment;
-import com.ly.homekobo.fragment.KuaijieK8Fragment;
-import com.ly.homekobo.fragment.KuaijieK9Fragment;
-import com.ly.homekobo.fragment.WeitiaoW10Fragment;
-import com.ly.homekobo.fragment.WeitiaoW11Fragment;
 import com.ly.homekobo.fragment.WeitiaoW1Fragment;
 import com.ly.homekobo.fragment.WeitiaoW2Fragment;
-import com.ly.homekobo.fragment.WeitiaoW3Fragment;
 import com.ly.homekobo.fragment.WeitiaoW4Fragment;
-import com.ly.homekobo.fragment.WeitiaoW6Fragment;
-import com.ly.homekobo.fragment.WeitiaoW7Fragment;
-import com.ly.homekobo.fragment.WeitiaoW8Fragment;
 import com.ly.homekobo.util.LogUtils;
 import com.ly.homekobo.util.Prefer;
 import com.ly.homekobo.util.ToastUtils;
@@ -73,36 +60,27 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
 
     @BindView(R.id.tab1)
     LinearLayout tab1;
-    @BindView(R.id.tab1_img)
-    ImageView tab1Img;
     @BindView(R.id.tab1_text)
     TextView tab1TextView;
 
     @BindView(R.id.tab2)
     LinearLayout tab2;
-    @BindView(R.id.tab2_img)
-    ImageView tab2Img;
     @BindView(R.id.tab2_text)
     TextView tab2TextView;
 
 
     @BindView(R.id.tab3)
     LinearLayout tab3;
-    @BindView(R.id.tab3_img)
-    ImageView tab3Img;
     @BindView(R.id.tab3_text)
     TextView tab3TextView;
 
 
     @BindView(R.id.tab4)
     LinearLayout tab4;
-    @BindView(R.id.tab4_img)
-    ImageView tab4Img;
     @BindView(R.id.tab4_text)
     TextView tab4TextView;
 
     List<TextView> tabTextViews;
-    List<ImageView> tabImageViews;
 
     List<BaseFragment> fragments;
     TabPagerAdapter tabPagerAdapter;
@@ -175,12 +153,6 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
         tabTextViews.add(tab3TextView);
         tabTextViews.add(tab4TextView);
 
-        tabImageViews = new ArrayList<>();
-        tabImageViews.add(tab1Img);
-        tabImageViews.add(tab2Img);
-        tabImageViews.add(tab3Img);
-        tabImageViews.add(tab4Img);
-
         fragments = new ArrayList<>();
         setFragments();
         tabPagerAdapter = new TabPagerAdapter(getSupportFragmentManager(), fragments);
@@ -201,30 +173,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
         } else if (blueName.contains("QMS-JQ-D") || blueName.contains("QMS4")) {
             fragments.add(new KuaijieK2Fragment());
             fragments.add(new WeitiaoW2Fragment());
-        } else if (blueName.contains("QMS-NQ") || blueName.contains("QMS3")) {
-            fragments.add(new KuaijieK2Fragment());
-            fragments.add(new WeitiaoW3Fragment());
         } else if (blueName.contains("QMS-MQ") || blueName.contains("QMS2")) {
             fragments.add(new KuaijieK2Fragment());
             fragments.add(new WeitiaoW4Fragment());
-        } else if (blueName.contains("QMS-KQ-H") || blueName.contains("QMS-H02")) {
-            fragments.add(new KuaijieK3Fragment());
-            fragments.add(new WeitiaoW6Fragment());
-        } else if (blueName.contains("QMS-DFQ") || blueName.contains("QMS-430") || blueName.contains("QMS-444")) {
-            fragments.add(new KuaijieK4Fragment());
-            fragments.add(new WeitiaoW7Fragment());
-        } else if (blueName.contains("QMS-DQ") || blueName.contains("QMS-443")) {
-            fragments.add(new KuaijieK5Fragment());
-            fragments.add(new WeitiaoW8Fragment());
-        } else if (blueName.contains("S3-2")) {
-            fragments.add(new KuaijieK2Fragment());
-            fragments.add(new WeitiaoW10Fragment());
-        } else if (blueName.contains("S3-3")) {
-            fragments.add(new KuaijieK8Fragment());
-            fragments.add(new WeitiaoW11Fragment());
-        } else if (blueName.contains("S3-4")) {
-            fragments.add(new KuaijieK9Fragment());
-            fragments.add(new WeitiaoW11Fragment());
         } else {
             fragments.add(new KuaijieK1Fragment());
             fragments.add(new WeitiaoW1Fragment());
@@ -242,10 +193,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
         for (int i = 0; i < tabCount; i++) {
             if (position == i) {
                 tabTextViews.get(i).setSelected(true);
-                tabImageViews.get(i).setSelected(true);
             } else {
                 tabTextViews.get(i).setSelected(false);
-                tabImageViews.get(i).setSelected(false);
             }
         }
         viewPager.setCurrentItem(position, false);
