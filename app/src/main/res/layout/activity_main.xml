@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ic_bg"
+    android:background="@color/bg_main"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -30,7 +30,7 @@
             android:layout_height="49dp"
             android:text="@string/text_enter"
             android:gravity="center"
-            android:textColor="@color/btn_text"
+            android:textColor="@color/black"
             android:textSize="@dimen/sp_16"
             android:background="@drawable/btn_background"
             />
