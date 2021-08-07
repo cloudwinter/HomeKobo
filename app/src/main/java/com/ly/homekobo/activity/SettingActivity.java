@@ -91,7 +91,7 @@ public class SettingActivity extends BaseActivity implements TranslucentActionBa
             tvLanguage.setText(R.string.english);
         } else {
             //法文
-            tvLanguage.setText(R.string.french);
+            tvLanguage.setText(R.string.chinese);
         }
 
 

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ic_bg">
+    android:background="@color/bg_main">
 
 
     <!-- title -->
@@ -16,19 +16,25 @@
             android:layout_width="match_parent"
             android:layout_height="1dp" />
 
-        <com.sn.blackdianqi.view.TranslucentActionBar
+        <com.ly.homekobo.view.TranslucentActionBar
             android:id="@+id/actionbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
 
-
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/line_bg"/>
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/lv_try"
-        android:layout_below="@+id/ll_top"
+        android:layout_below="@+id/line"
         android:orientation="vertical">
 
         <LinearLayout
@@ -45,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/blue_equipment"
-                android:textColor="@color/text_white"
+                android:textColor="@color/text_black"
                 android:textSize="14dp" />
 
 
@@ -55,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:text="5s"
-                android:textColor="@color/text_white"
+                android:textColor="@color/text_black"
                 android:textSize="13dp" />
 
         </LinearLayout>

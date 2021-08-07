@@ -7,8 +7,8 @@
 
 
     <string name="text_enter">進入</string>
-    <string name="blue_equipment">Bluetooth device</string>
-    <string name="search_blue_equipment">Scan Nearby Bluetooth devices</string>
+    <string name="blue_equipment">藍牙設備</string>
+    <string name="search_blue_equipment">搜索附近藍牙設備</string>
     <string name="searching">searching...</string>
 
     <string name="connecting">connecting...</string>
@@ -21,18 +21,18 @@
     <string name="dialog_positive">sure</string>
 
     <!-- 蓝牙设备/设置界面 -->
-    <string name="connecting_device">Connect Device</string>
-    <string name="not_connected">Not Connected</string>
-    <string name="connected">Connected</string>
-    <string name="disconnect">Disconnect</string>
-    <string name="click_to_connect">Click to connect</string>
-    <string name="lighting_time">Lighting time</string>
-    <string name="switch_language">Switch Language</string>
-    <string name="french">French</string>
-    <string name="english">English</string>
-    <string name="version">Version</string>
-    <string name="privacy_policy">Privacy policy</string>
-    <string name="setting">Setting</string>
+    <string name="connecting_device">連接設備</string>
+    <string name="not_connected">未連接</string>
+    <string name="connected">已連接</string>
+    <string name="disconnect">斷開連接</string>
+    <string name="click_to_connect">點擊連接</string>
+    <string name="lighting_time">燈光時間</string>
+    <string name="switch_language">切換語言</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="version">版本號</string>
+    <string name="privacy_policy">隱私協議</string>
+    <string name="setting">設置</string>
 
 
     <!-- tab -->

@@ -6,9 +6,13 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="line_bg">#D2D2FF</color>
 
     <!-- 背景色 -->
     <color name="bg_main">#9494F7</color>
+    <color name="color_9494F7">#9494F7</color>
+    <color name="color_FFD155">#FFD155</color>
+
     <!-- 按钮文字颜色 -->
     <color name="btn_text">#FFFFFF</color>
     <!-- 黑色文字 -->
