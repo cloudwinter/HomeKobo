@@ -2,6 +2,7 @@ package com.ly.homekobo.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,7 +18,7 @@ import androidx.core.content.ContextCompat;
 public class AnjianYuanView extends LinearLayout {
 
 
-    public static final String TAG = "JiyiView";
+    public static final String TAG = "AnjianYuanView";
 
     Context mContext;
 
@@ -67,29 +68,13 @@ public class AnjianYuanView extends LinearLayout {
             if (bgSelectedRes != -1) {
                 setBackground(ContextCompat.getDrawable(mContext,bgSelectedRes));
             }
+            titleTextView.setTextColor(Color.WHITE);
         } else {
             if (bgNormalRes != -1) {
                 setBackground(ContextCompat.getDrawable(mContext,bgNormalRes));
             }
+            titleTextView.setTextColor(Color.BLACK);
         }
     }
 
-
-    @SuppressWarnings("unused")
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        // We depend on the container to specify the layout size of
-        // our view. We can't really know what it is since we will be
-        // adding and removing different arbitrary views and do not
-        // want the layout to change as this happens.
-        setMeasuredDimension(getDefaultSize(0, widthMeasureSpec),
-                getDefaultSize(0, heightMeasureSpec));
-        // Children are just made to fill our space.
-        int childWidthSize = getMeasuredWidth();
-        int childHeightSize = getMeasuredHeight();
-
-        // 高度和宽度一样
-        heightMeasureSpec = widthMeasureSpec = MeasureSpec.makeMeasureSpec(
-                childWidthSize, MeasureSpec.EXACTLY);
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-    }
 }

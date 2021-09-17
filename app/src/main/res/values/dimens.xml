@@ -426,6 +426,7 @@
 
     <!-- 顶部圆区域 -->
     <dimen name="dingbu_yuan_size">218dp</dimen>
+    <dimen name="dingbu_yuan_ren_size">90dp</dimen>
     <dimen name="dingbu_yuan_ren_width">90dp</dimen>
     <dimen name="dingbu_yuan_ren_height">90dp</dimen>
     <dimen name="dingbu_yuan_img_margin_top">50dp</dimen>
@@ -444,6 +445,8 @@
 
     <!-- 按键圆区域 -->
     <dimen name="anjian_yuan_size">85dp</dimen>
+    <dimen name="anjian_yuan_size_height">46dp</dimen>
+    <dimen name="anjian_yuan_size_width">157dp</dimen>
     <dimen name="anjian_margin_sides">33dp</dimen>
     <dimen name="anjian_yuan_middle">25dp</dimen>
     <dimen name="anjian_icon_margin_top">10dp</dimen>
