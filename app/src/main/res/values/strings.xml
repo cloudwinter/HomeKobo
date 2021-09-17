@@ -42,16 +42,16 @@
     <string name="dengguang">燈光</string>
 
     <!-- 快捷 -->
-    <string name="jiyi">Memory</string>
-    <string name="jiyi1">Memory 1</string>
-    <string name="jiyi2">Memory 2</string>
-    <string name="kandianshi">Watch TV</string>
-    <string name="lingyali">Zero Gravity</string>
-    <string name="zhihan">Anti Snore</string>
-    <string name="fuyuan">Flat Bed</string>
-    <string name="tingyinyue">Music</string>
-    <string name="tuibufangsong">Leg Relax</string>
-    <string name="dingyao">Lumbar</string>
+    <string name="jiyi">記憶</string>
+    <string name="jiyi1">記憶1</string>
+    <string name="jiyi2">記憶2</string>
+    <string name="kandianshi">看電視</string>
+    <string name="lingyali">零壓力</string>
+    <string name="zhihan">止鼾</string>
+    <string name="fuyuan">復原</string>
+    <string name="tingyinyue">聽音樂</string>
+    <string name="tuibufangsong">腿部放鬆</string>
+    <string name="dingyao">頂腰</string>
     <string name="fenti">Split</string>
     <string name="tongbu">Sync</string>
     <string name="yujia">YOGA</string>
@@ -61,44 +61,44 @@
 
 
     <!-- 微调 -->
-    <string name="beibutiaozheng">BACK</string>
-    <string name="tunbutiaozheng">HIP</string>
-    <string name="toubutiaozheng">HEAD</string>
-    <string name="tuibutiaozheng">LEG</string>
-    <string name="yaobutiaozheng">LUMBAR</string>
-    <string name="beituitiaozheng">BACK LEG</string>
-    <string name="zhengtishengjiang">LIFT</string>
+    <string name="beibutiaozheng">背部調整</string>
+    <string name="tunbutiaozheng">臀部調整</string>
+    <string name="toubutiaozheng">頭部調整</string>
+    <string name="tuibutiaozheng">腿部調整</string>
+    <string name="yaobutiaozheng">腰部調整</string>
+    <string name="beituitiaozheng">背腿調整</string>
+    <string name="zhengtishengjiang">整床升降</string>
 
-    <string name="quanshenxunhuan">FULL CYCLE</string>
-    <string name="tunbuxunhuan">HIP CYCLE</string>
-    <string name="toubuxunhuan">HEAD CYCLE</string>
-    <string name="tuibuxunhuan">LEG CYCLE</string>
-    <string name="yaobuxunhuan">LUMBAR CYCLE</string>
-    <string name="beibuxunhuan">BACK CYCLE</string>
-    <string name="beituixunhuan">BACK/LEG CYCLE</string>
+    <string name="quanshenxunhuan">全身迴圈</string>
+    <string name="tunbuxunhuan">臀部迴圈</string>
+    <string name="toubuxunhuan">頭部迴圈</string>
+    <string name="tuibuxunhuan">腿部迴圈</string>
+    <string name="yaobuxunhuan">腰部迴圈</string>
+    <string name="beibuxunhuan">背部迴圈</string>
+    <string name="beituixunhuan">背腿迴圈</string>
 
 
     <!-- 灯光 -->
-    <string name="dengguangshijian">Lighting time</string>
-    <string name="tenfenzhong">10Mins</string>
-    <string name="eightxiaoshi">8Hours</string>
-    <string name="tentxiaoshi">10Hours</string>
+    <string name="dengguangshijian">灯光時間</string>
+    <string name="tenfenzhong">10分鐘</string>
+    <string name="eightxiaoshi">8小時</string>
+    <string name="tentxiaoshi">10小時</string>
 
 
     <!-- 按摩 -->
-    <string name="anmopingdonghuaqu">MASSAGE</string>
-    <string name="anmopinglv">Mass Wave</string>
-    <string name="toubuanmo">Back Mass</string>
-    <string name="zubuanmo">Leg Mass</string>
-    <string name="tenmin">10min</string>
-    <string name="twentymin">20min</string>
-    <string name="thirtymin">30min</string>
+    <string name="anmopingdonghuaqu">按摩</string>
+    <string name="anmopinglv">按摩頻率</string>
+    <string name="toubuanmo">背部按摩</string>
+    <string name="zubuanmo">腿部按摩</string>
+    <string name="tenmin">10分鐘</string>
+    <string name="twentymin">20分鐘</string>
+    <string name="thirtymin">30分鐘</string>
 
 
-    <string name="device_no_connected">Device Not Connected</string>
-    <string name="device_disconnect">Device disConnected please reconnected</string>
+    <string name="device_no_connected">連接未設備</string>
+    <string name="device_disconnect">設備已斷開請重新連接</string>
     <string name="debug_switch">debug switch</string>
-    <string name="open">open</string>
-    <string name="close">close</string>
+    <string name="open">打開</string>
+    <string name="close">關閉</string>
 
 </resources>

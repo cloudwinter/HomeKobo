@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sn.blackdianqi.view.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.ly.homekobo.view.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -21,4 +21,4 @@
         android:textColor="@color/text_white"
         />
 
-</com.sn.blackdianqi.view.SquareLinearLayout>
+</com.ly.homekobo.view.SquareLinearLayout>

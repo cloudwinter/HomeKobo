@@ -425,8 +425,10 @@
     <dimen name="sp_48">48dp</dimen>
 
     <!-- 顶部圆区域 -->
-    <dimen name="dingbu_yuan_size">234dp</dimen>
-    <dimen name="dingbu_yuan_ren_size">102dp</dimen>
+    <dimen name="dingbu_yuan_size">218dp</dimen>
+    <dimen name="dingbu_yuan_ren_width">90dp</dimen>
+    <dimen name="dingbu_yuan_ren_height">90dp</dimen>
+    <dimen name="dingbu_yuan_img_margin_top">50dp</dimen>
     <dimen name="dingbu_yuan_title_size">14dp</dimen>
 
 
@@ -434,10 +436,11 @@
     <dimen name="jiyi_margin_sides">20dp</dimen>
     <dimen name="jiyi_width">162dp</dimen>
     <dimen name="jiyi_height">60dp</dimen>
+    <dimen name="jiyi_button_height">40dp</dimen>
     <dimen name="jiyi_icon_left">20dp</dimen>
     <dimen name="jiyi_title_left">10dp</dimen>
     <dimen name="jiyi_title_size">14dp</dimen>
-    <dimen name="jiyi_middle">15dp</dimen>
+    <dimen name="jiyi_middle">45dp</dimen>
 
     <!-- 按键圆区域 -->
     <dimen name="anjian_yuan_size">85dp</dimen>

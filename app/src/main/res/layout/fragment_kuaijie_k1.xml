@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ic_bg"
+    android:background="@color/bg_main"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout
@@ -14,7 +14,7 @@
 
 
     <!-- 顶部 -->
-    <com.sn.blackdianqi.view.SquareLinearLayout
+    <com.ly.homekobo.view.SquareLinearLayout
         android:layout_width="@dimen/dingbu_yuan_size"
         android:layout_height="@dimen/dingbu_yuan_size"
         android:layout_gravity="center_horizontal"
@@ -25,9 +25,9 @@
 
         <ImageView
             android:id="@+id/img_anjian_top_icon"
-            android:layout_width="@dimen/dingbu_yuan_ren_size"
-            android:layout_height="@dimen/dingbu_yuan_ren_size"
-            android:layout_marginTop="40dp"
+            android:layout_width="@dimen/dingbu_yuan_ren_width"
+            android:layout_height="@dimen/dingbu_yuan_ren_height"
+            android:layout_marginTop="@dimen/dingbu_yuan_img_margin_top"
             android:background="@mipmap/xr_kandianshi_da" />
 
         <TextView
@@ -35,11 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/kandianshi"
-            android:textColor="@color/text_yuan"
+            android:textColor="@color/black"
             android:textSize="@dimen/dingbu_yuan_title_size"></TextView>
 
 
-    </com.sn.blackdianqi.view.SquareLinearLayout>
+    </com.ly.homekobo.view.SquareLinearLayout>
 
 
 
@@ -47,16 +47,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/jiyi_height"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="34dp"
         android:orientation="horizontal"
-        android:layout_marginLeft="@dimen/jiyi_margin_sides"
-        android:layout_marginRight="@dimen/jiyi_margin_sides">
+        android:gravity="center_vertical"
+        android:background="@color/color_7C7CE8"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        >
 
 
-        <com.sn.blackdianqi.view.JiyiView
+        <com.ly.homekobo.view.JiyiView
             android:id="@+id/view_jiyi1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/jiyi_button_height"
             android:orientation="horizontal"
             app:title="@string/jiyi1"
             app:bgnormal="@drawable/bg_tuoyuan_normal"
@@ -70,10 +73,10 @@
             android:layout_height="match_parent"
             />
 
-        <com.sn.blackdianqi.view.JiyiView
+        <com.ly.homekobo.view.JiyiView
             android:id="@+id/view_jiyi2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/jiyi_button_height"
             android:orientation="horizontal"
             app:title="@string/jiyi2"
             app:bgnormal="@drawable/bg_tuoyuan_normal"
@@ -96,7 +99,7 @@
             android:layout_weight="37"/>
 
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_kandianshi"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -112,7 +115,7 @@
             android:layout_weight="30"/>
 
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_lingyali"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -128,7 +131,7 @@
             android:layout_weight="30"/>
 
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_zhihan"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -159,7 +162,7 @@
             android:layout_height="match_parent"
             android:layout_weight="37"/>
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_fuyuan"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -175,7 +178,7 @@
             android:layout_weight="30"/>
 
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_tingyinyue"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -191,7 +194,7 @@
             android:layout_weight="30"/>
 
 
-        <com.sn.blackdianqi.view.AnjianYuanView
+        <com.ly.homekobo.view.AnjianYuanView
             android:id="@+id/view_tuibufangsong"
             android:layout_width="@dimen/anjian_yuan_size"
             android:layout_height="@dimen/anjian_yuan_size"
@@ -222,7 +225,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="37"/>
 
-            <com.sn.blackdianqi.view.AnjianYuanView
+            <com.ly.homekobo.view.AnjianYuanView
                 android:id="@+id/view_quanshengxunhuan"
                 android:layout_width="@dimen/anjian_yuan_size"
                 android:layout_height="@dimen/anjian_yuan_size"
@@ -238,7 +241,7 @@
                 android:layout_weight="30"/>
 
 
-            <com.sn.blackdianqi.view.AnjianYuanView
+            <com.ly.homekobo.view.AnjianYuanView
                 android:id="@+id/view_yujia"
                 android:layout_width="@dimen/anjian_yuan_size"
                 android:layout_height="@dimen/anjian_yuan_size"
@@ -254,7 +257,7 @@
                 android:layout_weight="30"/>
 
 
-            <com.sn.blackdianqi.view.AnjianYuanView
+            <com.ly.homekobo.view.AnjianYuanView
                 android:id="@+id/view_tunbuxunhuan"
                 android:layout_width="@dimen/anjian_yuan_size"
                 android:layout_height="@dimen/anjian_yuan_size"

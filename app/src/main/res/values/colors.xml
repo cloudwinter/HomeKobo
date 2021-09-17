@@ -10,8 +10,15 @@
 
     <!-- 背景色 -->
     <color name="bg_main">#9494F7</color>
+
+
+
     <color name="color_9494F7">#9494F7</color>
     <color name="color_FFD155">#FFD155</color>
+    <color name="color_7C7CE8">#7C7CE8</color>
+
+
+
 
     <!-- 按钮文字颜色 -->
     <color name="btn_text">#FFFFFF</color>

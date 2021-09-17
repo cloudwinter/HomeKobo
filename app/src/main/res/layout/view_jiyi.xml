@@ -6,10 +6,10 @@
 
     <ImageView
         android:id="@+id/img_dian"
-        android:layout_width="14dp"
-        android:layout_height="14dp"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
         android:layout_marginLeft="@dimen/jiyi_icon_left"
-        android:background="@mipmap/dian_black"
+        android:background="@drawable/bg_jiyi_dian"
         android:layout_centerVertical="true"
         />
 

@@ -10,6 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/line_bg"/>
+
 
     <RelativeLayout
         android:id="@+id/ll_content"
