@@ -66,7 +66,7 @@ public class SettingActivity extends BaseActivity implements TranslucentActionBa
         setContentView(R.layout.activity_set);
         ButterKnife.bind(this);
         // 设置title
-        actionBar.setData(getString(R.string.blue_equipment), R.mipmap.ic_back, null, 0, null, this);
+        actionBar.setData(getString(R.string.setting), R.mipmap.ic_back, null, 0, null, this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             actionBar.setStatusBarHeight(getStatusBarHeight());
