@@ -50,19 +50,21 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <com.sn.blackdianqi.view.AnjianWeitiaoView
-                android:id="@+id/view_beibutiaozheng"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/anjian_weitiao_height"
-                android:layout_marginLeft="@dimen/weitiao_marin"
-                android:layout_marginTop="@dimen/weitiao_marin"
-                android:layout_marginRight="@dimen/weitiao_marin"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:icon="@mipmap/xr_zhihan_xiao"
-                app:title="@string/beibutiaozheng" />
 
-            <com.sn.blackdianqi.view.AnjianWeitiaoView
-                android:id="@+id/view_yaobutiaozheng"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="@dimen/weitiao_marin"
+                android:layout_marginRight="@dimen/weitiao_marin">
+
+                <com.ly.homekobo.view.AnjianWeitiaoView
+                    android:id="@+id/view_beibutiaozheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:icon="@mipmap/xr_zhihan_xiao"
                     app:title="@string/beibutiaozheng" />
 
                 <View
