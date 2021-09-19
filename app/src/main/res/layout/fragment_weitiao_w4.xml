@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
 
+
         <!-- 顶部 -->
-        <com.sn.blackdianqi.view.SquareLinearLayout
-            android:id="@+id/layout_head"
+        <com.ly.homekobo.view.SquareLinearLayout
             android:layout_width="@dimen/dingbu_yuan_size"
             android:layout_height="@dimen/dingbu_yuan_size"
             android:layout_gravity="center_horizontal"
@@ -26,9 +26,9 @@
 
             <ImageView
                 android:id="@+id/img_anjian_top_icon"
-                android:layout_width="@dimen/dingbu_yuan_ren_size"
-                android:layout_height="@dimen/dingbu_yuan_ren_size"
-                android:layout_marginTop="40dp"
+                android:layout_width="@dimen/dingbu_yuan_ren_width"
+                android:layout_height="@dimen/dingbu_yuan_ren_height"
+                android:layout_marginTop="@dimen/dingbu_yuan_img_margin_top"
                 android:background="@mipmap/animation_beibutiaozheng_1" />
 
             <TextView
@@ -36,43 +36,51 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/beibutiaozheng"
-                android:textColor="@color/text_yuan"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dingbu_yuan_title_size"></TextView>
 
-        </com.sn.blackdianqi.view.SquareLinearLayout>
+
+        </com.ly.homekobo.view.SquareLinearLayout>
 
         <!-- 调整 -->
         <LinearLayout
             android:id="@+id/layout_tiaozheng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:paddingBottom="10dp"
             android:orientation="vertical"
             android:visibility="visible">
 
-            <com.sn.blackdianqi.view.AnjianWeitiaoView
-                android:id="@+id/view_beibutiaozheng"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/anjian_weitiao_height"
-                android:layout_marginLeft="@dimen/weitiao_marin"
-                android:layout_marginTop="@dimen/weitiao_marin"
-                android:layout_marginRight="@dimen/weitiao_marin"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:icon="@mipmap/xr_zhihan_xiao"
-                app:title="@string/beibutiaozheng" />
 
-
-            <com.sn.blackdianqi.view.AnjianWeitiaoView
-                android:id="@+id/view_tuibutiaozheng"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/anjian_weitiao_height"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp"
                 android:layout_marginLeft="@dimen/weitiao_marin"
-                android:layout_marginTop="@dimen/weitiao_marin"
-                android:layout_marginRight="@dimen/weitiao_marin"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:icon="@mipmap/xr_tuibuxunhuan_xiao"
-                app:title="@string/tuibutiaozheng" />
+                android:layout_marginRight="@dimen/weitiao_marin">
+
+                <com.ly.homekobo.view.AnjianWeitiaoView
+                    android:id="@+id/view_beibutiaozheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:icon="@mipmap/xr_zhihan_xiao"
+                    app:title="@string/beibutiaozheng" />
+
+                <View
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.ly.homekobo.view.AnjianWeitiaoView
+                    android:id="@+id/view_tuibutiaozheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:icon="@mipmap/xr_tuibutiaozheng_xiao"
+                    app:title="@string/tuibutiaozheng" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
