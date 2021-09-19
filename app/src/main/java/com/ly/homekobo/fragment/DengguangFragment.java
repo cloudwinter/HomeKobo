@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -31,12 +32,12 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
     @BindView(R.id.text_anjian_top_title)
     TextView topTitleTextView;
 
-    @BindView(R.id.tv_10fenzhong)
-    TextView tenMinsTextView;
-    @BindView(R.id.tv_8xiaoshi)
-    TextView eightHoursTextView;
-    @BindView(R.id.tv_10xiaoshi)
-    TextView tenHoursTextView;
+    @BindView(R.id.rl_10fenzhong)
+    RelativeLayout tenMinsView;
+    @BindView(R.id.rl_8xiaoshi)
+    RelativeLayout eightHoursView;
+    @BindView(R.id.rl_10xiaoshi)
+    RelativeLayout tenHoursView;
 
     /**
      * 默认间隔
@@ -59,9 +60,9 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
     }
 
     private void initView() {
-        tenMinsTextView.setOnClickListener(this);
-        eightHoursTextView.setOnClickListener(this);
-        tenHoursTextView.setOnClickListener(this);
+        tenMinsView.setOnClickListener(this);
+        eightHoursView.setOnClickListener(this);
+        tenHoursView.setOnClickListener(this);
     }
 
 
@@ -97,34 +98,34 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
         switch (v.getId()) {
             case R.id.tv_10fenzhong:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 19 16 CA");
-                if (tenMinsTextView.isSelected()) {
-                    tenMinsTextView.setSelected(false);
+                if (tenMinsView.isSelected()) {
+                    tenMinsView.setSelected(false);
                 } else {
-                    tenMinsTextView.setSelected(true);
-                    eightHoursTextView.setSelected(false);
-                    tenHoursTextView.setSelected(false);
+                    tenMinsView.setSelected(true);
+                    eightHoursView.setSelected(false);
+                    tenHoursView.setSelected(false);
                 }
                 break;
             case R.id.tv_8xiaoshi:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 1A 56 CB");
                 // 8小时
-                if (eightHoursTextView.isSelected()) {
-                    eightHoursTextView.setSelected(false);
+                if (eightHoursView.isSelected()) {
+                    eightHoursView.setSelected(false);
                 } else {
-                    tenMinsTextView.setSelected(false);
-                    eightHoursTextView.setSelected(true);
-                    tenHoursTextView.setSelected(false);
+                    tenMinsView.setSelected(false);
+                    eightHoursView.setSelected(true);
+                    tenHoursView.setSelected(false);
                 }
                 break;
             case R.id.tv_10xiaoshi:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 1B 97 0B");
                 // 10小时
-                if (tenHoursTextView.isSelected()) {
-                    tenHoursTextView.setSelected(false);
+                if (tenHoursView.isSelected()) {
+                    tenHoursView.setSelected(false);
                 } else {
-                    tenMinsTextView.setSelected(false);
-                    eightHoursTextView.setSelected(false);
-                    tenHoursTextView.setSelected(true);
+                    tenMinsView.setSelected(false);
+                    eightHoursView.setSelected(false);
+                    tenHoursView.setSelected(true);
                 }
                 break;
 

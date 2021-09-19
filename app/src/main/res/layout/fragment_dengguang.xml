@@ -14,8 +14,7 @@
 
 
         <!-- 顶部 -->
-        <com.sn.blackdianqi.view.SquareLinearLayout
-            android:id="@+id/layout_head"
+        <com.ly.homekobo.view.SquareLinearLayout
             android:layout_width="@dimen/dingbu_yuan_size"
             android:layout_height="@dimen/dingbu_yuan_size"
             android:layout_gravity="center_horizontal"
@@ -26,64 +25,176 @@
 
             <ImageView
                 android:id="@+id/img_anjian_top_icon"
-                android:layout_width="@dimen/dingbu_yuan_ren_size"
-                android:layout_height="@dimen/dingbu_yuan_ren_size"
-                android:layout_marginTop="40dp"
+                android:layout_width="@dimen/dingbu_yuan_ren_width"
+                android:layout_height="@dimen/dingbu_yuan_ren_height"
+                android:layout_marginTop="@dimen/dingbu_yuan_img_margin_top"
                 android:background="@mipmap/ic_dengguang" />
 
             <TextView
                 android:id="@+id/text_anjian_top_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/dengguangshijian"
-                android:textColor="@color/text_yuan"
+                android:text="@string/dengguang"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dingbu_yuan_title_size"></TextView>
 
-        </com.sn.blackdianqi.view.SquareLinearLayout>
 
-        <TextView
-            android:id="@+id/tv_10fenzhong"
+        </com.ly.homekobo.view.SquareLinearLayout>
+        
+        
+        <!-- 灯光 10min -->
+        <RelativeLayout
+            android:id="@+id/rl_10fenzhong"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_tuoyuan_normal"
-            android:text="@string/tenfenzhong"
-            android:gravity="center"
-            android:textSize="@dimen/sp_15"
-            android:textColor="@color/anjian_text_color_selector"
-            />
+            android:layout_height="46dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/bg_dengguang_bt_selected">
 
-        <TextView
-            android:id="@+id/tv_8xiaoshi"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_marginLeft="22dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_dengguang_10min"/>
+
+                <TextView
+                    android:id="@+id/tv_10fenzhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tenfenzhong"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/color_9494F7"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="22dp"
+                />
+        </RelativeLayout>
+
+        <!-- 灯光 8h -->
+        <RelativeLayout
+            android:id="@+id/rl_8xiaoshi"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_tuoyuan_normal"
-            android:text="@string/eightxiaoshi"
-            android:gravity="center"
-            android:textSize="@dimen/sp_15"
-            android:textColor="@color/anjian_text_color_selector"
-            />
+            android:layout_height="46dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/bg_dengguang_bt_selected">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_marginLeft="22dp"/>
 
 
-        <TextView
-            android:id="@+id/tv_10xiaoshi"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_dengguang_8h"/>
+
+                <TextView
+                    android:id="@+id/tv_8xiaoshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/eightxiaoshi"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/color_9494F7"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="22dp"
+                />
+        </RelativeLayout>
+
+        <!-- 灯光 10h -->
+        <RelativeLayout
+            android:id="@+id/rl_10xiaoshi"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_tuoyuan_normal"
-            android:text="@string/tentxiaoshi"
-            android:gravity="center"
-            android:textSize="@dimen/sp_15"
-            android:textColor="@color/anjian_text_color_selector"
-            />
+            android:layout_height="46dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/bg_dengguang_bt_selected">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_marginLeft="22dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_dengguang_10h"/>
+
+                <TextView
+                    android:id="@+id/tv_10xiaoshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tentxiaoshi"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/color_9494F7"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_vertical_nns"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="22dp"
+                />
+        </RelativeLayout>
+
 
     </LinearLayout>
 
