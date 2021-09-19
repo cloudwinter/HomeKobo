@@ -456,13 +456,13 @@
     <dimen name="anjian_middle_yuan_size">102dp</dimen>
 
     <!-- 按键椭圆区域 -->
-    <dimen name="anjian_tuoyuan_title_size">12dp</dimen>
+    <dimen name="anjian_tuoyuan_title_size">13dp</dimen>
     <dimen name="anjian_tuoyuan_height">60dp</dimen>
     <dimen name="anjian_tuoyuan_width">155dp</dimen>
     <dimen name="anjian_margin_size">19dp</dimen>
     <dimen name="anjian_middle_width">12dp</dimen>
 
     <dimen name="weitiao_marin">20dp</dimen>
-    <dimen name="anjian_weitiao_height">60dp</dimen>
+    <dimen name="anjian_weitiao_height">46dp</dimen>
 
 </resources>
