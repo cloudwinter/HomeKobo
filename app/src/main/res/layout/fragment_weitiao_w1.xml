@@ -15,6 +15,7 @@
 
         <!-- 顶部 -->
         <com.ly.homekobo.view.SquareLinearLayout
+            android:id="@+id/layout_head"
             android:layout_width="@dimen/dingbu_yuan_size"
             android:layout_height="@dimen/dingbu_yuan_size"
             android:layout_gravity="center_horizontal"

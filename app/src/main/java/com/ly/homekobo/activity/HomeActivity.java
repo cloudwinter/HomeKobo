@@ -125,12 +125,12 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener, 
         }
         setContentView(R.layout.activity_home);
         ButterKnife.bind(this);
-        actionBar.setData(null, R.mipmap.ic_back, null, R.mipmap.ic_set, null, this);
-        actionBar.setStatusBarHeight(getStatusBarHeight());
         DeviceBean deviceBean = Prefer.getInstance().getConnectedDevice();
         if (deviceBean != null) {
             blueName = deviceBean.getTitle();
         }
+        actionBar.setData(blueName, R.mipmap.ic_back, null, R.mipmap.ic_set, null, this);
+        actionBar.setStatusBarHeight(getStatusBarHeight());
         LogUtils.e(TAG, "当前连接的蓝牙名称为：" + blueName);
         initView();
         setCurrentTab(1);

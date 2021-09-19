@@ -2,23 +2,23 @@
     <string name="app_name">HomeKobo</string>
 
     <!-- common -->
-    <string name="exit">Press the back key again to exit the app</string>
+    <string name="exit">請在按一次返回鍵退出</string>
 
 
 
     <string name="text_enter">進入</string>
     <string name="blue_equipment">藍牙設備</string>
     <string name="search_blue_equipment">搜索附近藍牙設備</string>
-    <string name="searching">searching...</string>
+    <string name="searching">搜索中...</string>
 
-    <string name="connecting">connecting...</string>
-    <string name="please_wait">Please later...</string>
+    <string name="connecting">連接中...</string>
+    <string name="please_wait">請稍後...</string>
     
     <!-- dialog -->
-    <string name="connected_failed">The connection failed. Please try to reconnect</string>
-    <string name="dialog_title_disconnect">Disconnected or not</string>
-    <string name="dialog_negetive">cancel</string>
-    <string name="dialog_positive">sure</string>
+    <string name="connected_failed">連接失敗，請重新連接</string>
+    <string name="dialog_title_disconnect">確認斷開連接</string>
+    <string name="dialog_negetive">取消</string>
+    <string name="dialog_positive">確認</string>
 
     <!-- 蓝牙设备/设置界面 -->
     <string name="connecting_device">連接設備</string>
@@ -28,7 +28,7 @@
     <string name="click_to_connect">點擊連接</string>
     <string name="lighting_time">燈光時間</string>
     <string name="switch_language">切換語言</string>
-    <string name="chinese">中文</string>
+    <string name="chinese">繁体中文</string>
     <string name="english">英文</string>
     <string name="version">版本號</string>
     <string name="privacy_policy">隱私協議</string>

@@ -28,7 +28,7 @@
     <string name="click_to_connect">Click to connect</string>
     <string name="lighting_time">Lighting time</string>
     <string name="switch_language">Switch Language</string>
-    <string name="chinese">French</string>
+    <string name="chinese">Chinese</string>
     <string name="english">English</string>
     <string name="version">Version</string>
     <string name="privacy_policy">Privacy policy</string>
@@ -43,8 +43,8 @@
 
     <!-- 快捷 -->
     <string name="jiyi">Memory</string>
-    <string name="jiyi1">Memory 1</string>
-    <string name="jiyi2">Memory 2</string>
+    <string name="jiyi1">M1</string>
+    <string name="jiyi2">M2</string>
     <string name="kandianshi">Watch TV</string>
     <string name="lingyali">Zero Gravity</string>
     <string name="zhihan">Anti Snore</string>

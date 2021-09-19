@@ -424,7 +424,7 @@
     <dimen name="sp_42">42dp</dimen>
     <dimen name="sp_48">48dp</dimen>
 
-    <dimen name="tab_text_size">18sp</dimen>
+    <dimen name="tab_text_size">14sp</dimen>
 
     <!-- 顶部圆区域 -->
     <dimen name="dingbu_yuan_size">218dp</dimen>
