@@ -450,7 +450,7 @@
     <dimen name="anjian_margin_sides">33dp</dimen>
     <dimen name="anjian_yuan_middle">25dp</dimen>
     <dimen name="anjian_icon_margin_top">10dp</dimen>
-    <dimen name="anjian_title_text_size">12dp</dimen>
+    <dimen name="anjian_title_text_size">14dp</dimen>
 
     <!-- 按键中圆区域 -->
     <dimen name="anjian_middle_yuan_size">102dp</dimen>

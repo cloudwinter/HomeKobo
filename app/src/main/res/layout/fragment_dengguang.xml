@@ -78,7 +78,7 @@
                     android:text="@string/tenfenzhong"
                     android:gravity="center"
                     android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_9494F7"
+                    android:textColor="@color/color_FFD155"
                     />
 
             </LinearLayout>
@@ -129,7 +129,7 @@
                     android:text="@string/eightxiaoshi"
                     android:gravity="center"
                     android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_9494F7"
+                    android:textColor="@color/color_FFD155"
                     />
 
             </LinearLayout>
@@ -180,7 +180,7 @@
                     android:text="@string/tentxiaoshi"
                     android:gravity="center"
                     android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_9494F7"
+                    android:textColor="@color/color_FFD155"
                     />
 
             </LinearLayout>

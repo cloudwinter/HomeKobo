@@ -14,8 +14,7 @@
 
 
         <!-- 顶部 -->
-        <com.sn.blackdianqi.view.SquareLinearLayout
-            android:id="@+id/layout_head"
+        <com.ly.homekobo.view.SquareLinearLayout
             android:layout_width="@dimen/dingbu_yuan_size"
             android:layout_height="@dimen/dingbu_yuan_size"
             android:layout_gravity="center_horizontal"
@@ -26,22 +25,23 @@
 
             <ImageView
                 android:id="@+id/img_anjian_top_icon"
-                android:layout_width="@dimen/dingbu_yuan_ren_size"
-                android:layout_height="@dimen/dingbu_yuan_ren_size"
-                android:layout_marginTop="40dp"
+                android:layout_width="@dimen/dingbu_yuan_ren_width"
+                android:layout_height="@dimen/dingbu_yuan_ren_height"
+                android:layout_marginTop="@dimen/dingbu_yuan_img_margin_top"
                 android:background="@mipmap/ic_anmo" />
 
             <TextView
                 android:id="@+id/text_anjian_top_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/anmopingdonghuaqu"
-                android:textColor="@color/text_yuan"
+                android:text="@string/anmo"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dingbu_yuan_title_size"></TextView>
 
-        </com.sn.blackdianqi.view.SquareLinearLayout>
+
+        </com.ly.homekobo.view.SquareLinearLayout>
         
-        
+        <!-- 时间 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -51,13 +51,11 @@
             android:layout_marginTop="20dp">
 
 
-            <com.sn.blackdianqi.view.AnjianAnmoYuanView
+            <com.ly.homekobo.view.AnjianAnmoYuanView
                 android:id="@+id/view_10time"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:bgselected="@drawable/bg_tuoyuan_selected"
                 app:icon="@mipmap/ic_time_10_normal"
                 app:imgnormal="@mipmap/ic_time_10_normal"
                 app:imgselected="@mipmap/ic_time_10_selected"
@@ -68,13 +66,11 @@
                 android:layout_width="25dp"
                 android:layout_height="match_parent"/>
 
-            <com.sn.blackdianqi.view.AnjianAnmoYuanView
+            <com.ly.homekobo.view.AnjianAnmoYuanView
                 android:id="@+id/view_20time"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:bgselected="@drawable/bg_tuoyuan_selected"
                 app:icon="@mipmap/ic_time_20_normal"
                 app:imgnormal="@mipmap/ic_time_20_normal"
                 app:imgselected="@mipmap/ic_time_20_selected"
@@ -85,13 +81,11 @@
                 android:layout_width="25dp"
                 android:layout_height="match_parent"/>
 
-            <com.sn.blackdianqi.view.AnjianAnmoYuanView
+            <com.ly.homekobo.view.AnjianAnmoYuanView
                 android:id="@+id/view_30time"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:bgnormal="@drawable/bg_tuoyuan_normal"
-                app:bgselected="@drawable/bg_tuoyuan_selected"
                 app:icon="@mipmap/ic_time_30_normal"
                 app:imgnormal="@mipmap/ic_time_30_normal"
                 app:imgselected="@mipmap/ic_time_30_selected"
@@ -101,32 +95,31 @@
         </LinearLayout>
 
 
-        <com.sn.blackdianqi.view.AnjianAnmoView
+        <!-- 按键 -->
+        <com.ly.homekobo.view.AnjianAnmoView
             android:id="@+id/view_anmo_pinglv"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="@dimen/weitiao_marin"
-            android:layout_marginTop="@dimen/weitiao_marin"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="@dimen/weitiao_marin"
-            app:bgnormal="@drawable/bg_tuoyuan_normal"
             app:icon="@mipmap/ic_anmopinglv"
             app:title="@string/anmopinglv"
             app:linecount="4"/>
 
-        <com.sn.blackdianqi.view.AnjianAnmoView
+        <com.ly.homekobo.view.AnjianAnmoView
             android:id="@+id/view_anmo_toubu"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="@dimen/weitiao_marin"
             android:layout_marginTop="@dimen/weitiao_marin"
             android:layout_marginRight="@dimen/weitiao_marin"
-            app:bgnormal="@drawable/bg_tuoyuan_normal"
             app:icon="@mipmap/ic_beibuanmo"
             app:title="@string/toubuanmo"
             app:linecount="3"/>
 
 
-        <com.sn.blackdianqi.view.AnjianAnmoView
+        <com.ly.homekobo.view.AnjianAnmoView
             android:id="@+id/view_anmo_zubu"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -134,7 +127,6 @@
             android:layout_marginTop="@dimen/weitiao_marin"
             android:layout_marginRight="@dimen/weitiao_marin"
             android:layout_marginBottom="10dp"
-            app:bgnormal="@drawable/bg_tuoyuan_normal"
             app:icon="@mipmap/ic_zubuanmo"
             app:title="@string/zubuanmo"
             app:linecount="3"/>
