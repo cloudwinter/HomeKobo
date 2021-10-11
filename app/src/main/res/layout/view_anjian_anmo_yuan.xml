@@ -17,8 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="看电视"
-        android:textSize="@dimen/anjian_title_text_size"
-        android:textColor="@color/color_FFD155"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="5dp"
         />

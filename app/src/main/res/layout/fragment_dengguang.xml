@@ -77,8 +77,8 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/tenfenzhong"
                     android:gravity="center"
-                    android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_FFD155"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
                     />
 
             </LinearLayout>
@@ -128,8 +128,8 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/eightxiaoshi"
                     android:gravity="center"
-                    android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_FFD155"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
                     />
 
             </LinearLayout>
@@ -179,8 +179,8 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/tentxiaoshi"
                     android:gravity="center"
-                    android:textSize="@dimen/sp_15"
-                    android:textColor="@color/color_FFD155"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"
                     />
 
             </LinearLayout>

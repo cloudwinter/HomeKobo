@@ -5,7 +5,7 @@
     android:background="@mipmap/ic_bg"
     android:orientation="vertical">
 
-    <com.sn.blackdianqi.view.TranslucentActionBar
+    <com.ly.homekobo.view.TranslucentActionBar
         android:id="@+id/actionbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

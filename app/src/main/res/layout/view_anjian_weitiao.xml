@@ -62,8 +62,8 @@
         android:layout_marginTop="8dp"
         android:layout_centerVertical="true"
         android:text="@string/kandianshi"
-        android:textColor="@color/color_FFD155"
-        android:textSize="@dimen/anjian_tuoyuan_title_size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
         android:layout_gravity="center_horizontal"
         />
 

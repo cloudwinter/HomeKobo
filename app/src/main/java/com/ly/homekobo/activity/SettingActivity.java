@@ -82,6 +82,8 @@ public class SettingActivity extends BaseActivity implements TranslucentActionBa
         llDebug.setOnClickListener(this);
         if (Debuggable) {
             llDebug.setVisibility(View.VISIBLE);
+        } else {
+            llDebug.setVisibility(View.GONE);
         }
         // 获取当前系统的语言
         Locale curLocale = getResources().getConfiguration().locale;

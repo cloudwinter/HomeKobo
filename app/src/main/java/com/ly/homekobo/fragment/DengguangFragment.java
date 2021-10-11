@@ -33,7 +33,7 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
     TextView topTitleTextView;
 
     @BindView(R.id.rl_10fenzhong)
-    RelativeLayout tenMinsView;
+    RelativeLayout  tenMinsView;
     @BindView(R.id.rl_8xiaoshi)
     RelativeLayout eightHoursView;
     @BindView(R.id.rl_10xiaoshi)
@@ -96,7 +96,7 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tv_10fenzhong:
+            case R.id.rl_10fenzhong:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 19 16 CA");
                 if (tenMinsView.isSelected()) {
                     tenMinsView.setSelected(false);
@@ -106,7 +106,7 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
                     tenHoursView.setSelected(false);
                 }
                 break;
-            case R.id.tv_8xiaoshi:
+            case R.id.rl_8xiaoshi:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 1A 56 CB");
                 // 8小时
                 if (eightHoursView.isSelected()) {
@@ -117,7 +117,7 @@ public class DengguangFragment extends BaseFragment implements View.OnClickListe
                     tenHoursView.setSelected(false);
                 }
                 break;
-            case R.id.tv_10xiaoshi:
+            case R.id.rl_10xiaoshi:
                 sendBlueCmd("FF FF FF FF 05 00 00 00 1B 97 0B");
                 // 10小时
                 if (tenHoursView.isSelected()) {

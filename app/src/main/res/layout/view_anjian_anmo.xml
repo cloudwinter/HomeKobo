@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="@string/anmopinglv"
-                android:textColor="@color/color_FFD155"
+                android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:textSize="13dp"
                 android:layout_toEndOf="@+id/view_center"

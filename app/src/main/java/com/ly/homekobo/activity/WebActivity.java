@@ -60,9 +60,10 @@ public class WebActivity extends BaseActivity implements TranslucentActionBar.Ac
         String url = "";
         String language = Prefer.getInstance().getSelectedLanguage();
         if ("en".equals(language)) {
-            url = "file:///android_res/mipmap/protocol_en.jpeg";
+//            url = "file:///android_res/mipmap/protocol_en.jpeg";
+            url = "http://www.tri-mix.net/home-kobo.fcn.html";
         } else {
-            url = "file:///android_res/mipmap/protocol_fr.jpegg";
+            url = "http://www.tri-mix.net/home-kobo.en.html";
         }
         webView.loadUrl(url);
     }
