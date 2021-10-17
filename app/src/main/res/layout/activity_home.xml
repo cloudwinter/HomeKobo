@@ -54,6 +54,12 @@
                     android:textSize="@dimen/tab_text_size" />
             </LinearLayout>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_line"
+                android:layout_gravity="center_vertical"
+                />
 
             <LinearLayout
                 android:id="@+id/tab2"
@@ -72,6 +78,13 @@
                     android:textColor="@color/tab_color_selector"
                     android:textSize="@dimen/tab_text_size" />
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_line"
+                android:layout_gravity="center_vertical"
+                />
 
             <LinearLayout
                 android:id="@+id/tab3"
@@ -92,7 +105,12 @@
                     android:textSize="@dimen/tab_text_size" />
             </LinearLayout>
 
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tab_line"
+                android:layout_gravity="center_vertical"
+                />
 
             <LinearLayout
                 android:id="@+id/tab4"
