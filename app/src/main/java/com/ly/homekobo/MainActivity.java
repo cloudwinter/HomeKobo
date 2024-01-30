@@ -24,6 +24,8 @@ import com.ly.homekobo.util.Prefer;
 import com.ly.homekobo.util.ToastUtils;
 
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -35,7 +37,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     TextView textView;
     @BindView(R.id.img_logo)
     ImageView imageView;
-
 
 
     // 蓝牙适配器
@@ -71,6 +72,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
             // 未打开蓝牙
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             startActivityForResult(enableBtIntent, 10);
         }
     }
@@ -79,6 +90,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.text_enter:
+                if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
+                    ToastUtils.showToast(this,"请先开启蓝牙");
+                    return;
+                }
                 // 判断当前蓝牙是否已连接，如果已连接直接调整到HomeActivity
                 if (BlueUtils.isConnected()) {
                     // 跳转到首页页面
