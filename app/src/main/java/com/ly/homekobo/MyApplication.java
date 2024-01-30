@@ -25,7 +25,6 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.decode.BaseImageDecoder;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.nostra13.universalimageloader.utils.StorageUtils;
-import com.tencent.bugly.Bugly;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import java.io.ByteArrayInputStream;
@@ -177,10 +176,10 @@ public class MyApplication extends Application {
         * 参数3：是否开启调试模式，调试模式下会输出'CrashReport'tag的日志
         * 注意：如果您之前使用过Bugly SDK，请将以下这句注释掉。
         */
-        CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(getApplicationContext());
-        strategy.setAppVersion("1");
-        strategy.setAppPackageName("com.sn.blackdianqi");
-        strategy.setAppReportDelay(20000);                          //Bugly会在启动20s后联网同步数据
+//        CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(getApplicationContext());
+//        strategy.setAppVersion("1");
+//        strategy.setAppPackageName("com.sn.blackdianqi");
+//        strategy.setAppReportDelay(20000);                          //Bugly会在启动20s后联网同步数据
 
         /*  第三个参数为SDK调试模式开关，调试模式的行为特性如下：
             输出详细的Bugly SDK的Log；
@@ -188,9 +187,9 @@ public class MyApplication extends Application {
             自定义日志将会在Logcat中输出。
             建议在测试阶段建议设置成true，发布时设置为false。*/
 
-        CrashReport.initCrashReport(getApplicationContext(), "50b1036fc4", true ,strategy);
-
-        Bugly.init(getApplicationContext(), "50b1036fc4", false);
+//        CrashReport.initCrashReport(getApplicationContext(), "50b1036fc4", true ,strategy);
+//
+//        Bugly.init(getApplicationContext(), "50b1036fc4", false);
     }
 
 }

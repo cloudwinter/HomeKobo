@@ -123,10 +123,10 @@ public class BaseActivity extends AppCompatActivity {
         Resources resources = getResources();
         Configuration config = resources.getConfiguration();
         DisplayMetrics dm = resources.getDisplayMetrics();
-        if (language.equals("fr")) {
-            config.locale = Locale.FRENCH;
-        } else {
+        if (language.equals("en")) {
             config.locale = Locale.ENGLISH;
+        } else {
+            config.locale = Locale.CHINA;
         }
         if (resources.getConfiguration().fontScale != 1) {
             config.fontScale = 1.0f;
